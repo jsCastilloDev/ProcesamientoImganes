@@ -59,7 +59,7 @@ def btw_pts(x,y,M,N,n,fc):
 #////////////////////////////////////////
 #        PROGRAMA PRINCIPAL             /
 #////////////////////////////////////////
-img = cv2.imread('imagenes/noiseball.png')
+img = cv2.imread('noiseball.png')
 gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 gray = cv2.normalize(gray.astype('float'), None, 0, 1, cv2.NORM_MINMAX)
 m,n = gray.shape

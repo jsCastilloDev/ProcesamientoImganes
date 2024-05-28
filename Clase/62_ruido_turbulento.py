@@ -25,9 +25,8 @@ def ruido_turbulento(f,k):
     return ft
 
 #programa ppal
-img = cv2.imread('imagenes/cameraman.png')
-gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
-gray = cv2.normalize(gray.astype('float'), None, 0.0, 1.0, cv2.NORM_MINMAX)
+img = cv2.imread('cameraman.png')
+gray = cv2.normalize(img.astype('float'), None, 0.0, 1.0, cv2.NORM_MINMAX)
 
 k=0.005
 output= ruido_turbulento(gray,k)
