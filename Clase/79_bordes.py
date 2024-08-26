@@ -3,8 +3,8 @@ import numpy as np
 from skimage import filters
 from skimage import feature
 import matplotlib.pyplot as plt
-
-img = cv2.imread('cameraman.png')
+#Clase\imagenes\cameraman.png
+img = cv2.imread('./imagenes/cameraman.png')
 gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 
 ret, thresh = cv2.threshold(gray,0,255,cv2.THRESH_OTSU)
